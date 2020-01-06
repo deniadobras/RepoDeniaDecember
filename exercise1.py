@@ -1,5 +1,4 @@
 
-
 yourname = input("what's your name?")
 if yourname == "Denia":
     quit()
