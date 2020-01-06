@@ -1,4 +1,3 @@
-from pip._vendor.distlib.compat import raw_input
 
 yourname = input("what's your name?")
 if yourname == "Denia":

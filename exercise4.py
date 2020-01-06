@@ -11,9 +11,9 @@ enter = ""
 #print(word)
 temp = "_" * word_len
 
-print("\t\t The word chosen by computer contain", word_len,"letters.")
-print("\t  Tap any letter to check if this letter is in computer word.\n")
-print("\t You got 5 attempts to check if tapped letter is in computer word.\n")
+print("The word chosen by computer contain", word_len,"letters.")
+print("Tap any letter to check if this letter is in computer word.")
+print("You got 5 attempts to check if tapped letter is in computer word.")
 
 for i in range(0, 5):
     attempt += 1
@@ -22,16 +22,16 @@ for i in range(0, 5):
         for i in range(0, word_len):
             if guess == word[i]:
                 temp = temp[:i] + guess + temp[i + 1:]
-        print("yes\n" + temp)
+        print("yes" + temp)
     if guess not in word:
         print("no")
     if "_" not in temp:
-        print("\t\tCongratulations!! You guessed the word!")
+        print("Congratulations!! You guessed the word!")
         break
     elif attempt == 5:
         guess = input("And the word is:")
         if guess == word:
 
-            print("\t\tCongratulations!! You guessed the word!")
+            print("Congratulations!! You guessed the word!")
         else:
-            print("\t\tWRONG!! Shame on you!")
+            print("Wrong!! Shame on you!")
