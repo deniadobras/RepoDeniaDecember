@@ -39,7 +39,3 @@ print("final list - ", str(res))
 
 
 
-
-
-
-
