@@ -1,6 +1,6 @@
 from pip._vendor.distlib.compat import raw_input
 
-yourname = raw_input("what's your name?")
+yourname = input("what's your name?")
 if yourname == "Denia":
     quit()
 
