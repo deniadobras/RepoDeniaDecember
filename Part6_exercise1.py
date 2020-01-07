@@ -16,7 +16,7 @@ for n in range(1, 10):
 
 print(sum(inputNumbers))
 
-n = input("Enter a number to calculate sum")
+n = input("Enter a number to calculate sum: ")
 
 n = int(n)
 sum = n * (n+1) / 2
