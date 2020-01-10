@@ -1,16 +1,20 @@
-father = {
-    "John" : "Josh",
-    "Andrew" : "Michael",
-    "Barney": "Bob",
-    "Jake" : "Dylan"
-}
+# Who's your daddy?
 
-print(father["Jake"])
 
-father["Max"] = "Bill"
+father = {"John": "Josh", "Josh": "Manny", "Andrew": "Michael", "Michael": "Robert", "Barney": "Bob", "Bob": "Manuel",
+          "Jake": "Dylan", "Dylan": "Dominc", "Manny": "William", "Max": "Bill"}
+
+# print(father["Jake"])
+
 del father["Andrew"]
 
-print(father)
+# print(father)
 
-inputName = str(input("Enter a name: "))
-print(father[inputName])
+inputNameFather = str(input("Enter a name: "))
+print(father[inputNameFather])
+
+# --------
+
+
+
+

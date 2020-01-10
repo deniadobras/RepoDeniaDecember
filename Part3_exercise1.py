@@ -6,4 +6,3 @@ amount = int(input("Enter the range: "))
 
 for i in range(minimum, maximum + 1, amount):
     print(i, end=' ')
-
