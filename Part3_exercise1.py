@@ -1,3 +1,4 @@
+# program that counts for the user. Let the user enter the starting number, the ending number, and the amount by which to count.
 
 minimum = int(input("Enter the start of range: "))
 maximum = int(input("Enter the end of range: "))
