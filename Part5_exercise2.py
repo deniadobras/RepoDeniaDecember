@@ -1,16 +1,3 @@
-import random
-
-#Exercise1 - print random words
-
-words = ["cat", "dog", "dinosaur", "random", "words"]
-
-for i in range(len(words)):
-    random_index = random.randrange(len(words))
-    print(words.pop(random_index))
-
-
-print("-------------------------------")
-
 #Exercise2 - sum of all float and int in a list
 
 import ast

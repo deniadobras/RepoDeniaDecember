@@ -6,7 +6,7 @@ father = {"John": "Josh", "Josh": "Manny", "Andrew": "Michael", "Michael": "Robe
 
 # print(father["Jake"])
 
-del father["Andrew"]
+# del father["Andrew"]
 
 # print(father)
 
