@@ -18,6 +18,7 @@ while choice != "0":
 	1 - Find out who's your father
 	2 - Add a pair
 	3 - Delete a pair
+	4 - Replace a pair
 	""")
     choice = input("Choice: ")
     print()
@@ -50,10 +51,19 @@ while choice != "0":
             "Who would you like to delete, write down the name of the son and the pair will be deleted: ")
         if deletePair in fathers:
             del fathers[deletePair]
-            print("\n You deleted ", deletePair, "and his father.")
+            print("\n You deleted", deletePair, "and his father.")
         else:
             print("\nThat person doesnt exist! Try adding him.")
 
-    # some unknown choice
+    # replace a father
+    elif choice == "4":
+        pick = input("Which father-son pair do you want to redefine?: ")
+        if pick in fathers:
+            father = input("Who is the new father?: ")
+            fathers[pick] = father
+            print("\n", pick, "has a new father.")
+        else:
+            print("I don't know who you are talking about...")
+    # unknown choice
     else:
         print("\nSorry, but", choice, "isn't a valid choice.")
