@@ -21,17 +21,25 @@ import time
 #     pass
 
 
+num = 0
 
-num = int(input("Please give me an even number to print out all its divisors: "))
 
-def printDivisors(n):
-    i = 1
-    if(n % 2) == 0:
-        while i <= n:
-            if (n % i==0):
-                print(i),
-            i = i + 1
-    else:
-        pass
+def divisors(number):
+    n = 1
+    while (n < number):
+        if (number % n == 0):
+            print(n)
+        else:
+            pass
+        n += 1
+    print(number)
 
-printDivisors(num)
+
+while True:
+    try:
+        if type(num) == int:
+            num = int(input("Please give me an even number to print out all its divisors: "))
+            divisors(num)
+            break
+    except ValueError:
+        print("Please only use ints.")

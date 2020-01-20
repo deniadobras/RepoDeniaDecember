@@ -29,5 +29,7 @@ def fibonacci(n):
     fibonacci_cache[n] = value
     return value
 
-for n in range(1, 100000):
+
+x = int(input("Please enter the amount of numbers in the sequence to generate: "))
+for n in range(1, x + 1):
     print(n, ":", fibonacci(n))

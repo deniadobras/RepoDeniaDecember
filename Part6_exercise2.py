@@ -1,10 +1,8 @@
 #Exercise2 - list of first and last - how do I make a new list with these 2 numbers?
 
 a = [5, 10, 15, 20, 25]
-c = []
 
-def my_function(b):
-    # print([a[0], a[-1]])
-    c = list(a[0], a[-1])
+def list_ends(list):
+    return [list[0], list[len(list)-1]]
 
-print(my_function(c))
+print(list_ends(a))

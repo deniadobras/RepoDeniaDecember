@@ -15,9 +15,16 @@
 #
 # print(sum(inputNumbers))
 
-n = input("Enter a number to calculate sum: ")
-n = int(n)
+#n = int(input("Enter a number to calculate sum: "))
+n = 0
 
-sum = n * (n+1) / 2
+def calculate_sum(n):
+    n = int(input("Enter a number to calculate sum: "))
+    sum = n * (n+1) / 2
+    print("Sum of the first", n, "natural numbers is: ", sum )
 
-print("Sum of the first", n, "numbers is: ", sum )
+try:
+    if type(n) == int:
+        calculate_sum(n)
+except ValueError:
+    print("Please input only ints.")
