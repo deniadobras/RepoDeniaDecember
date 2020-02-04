@@ -3,7 +3,7 @@
 #        print(line, end='')
 
 with open('helloworld.txt', 'w') as f:
-    f.write("This is a test la lala \n and this is the second line")
+    f.write("This is a test la lala \n and this is the second line, sjhdgsahj dhsgdjsagd")
 
 with open('helloworld.txt') as f:
     with open('emptyfile.txt', 'w') as f1:

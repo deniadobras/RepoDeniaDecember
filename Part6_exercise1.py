@@ -20,8 +20,8 @@ n = 0
 
 def calculate_sum(n):
     n = int(input("Enter a number to calculate sum: "))
-    sum = n * (n+1) / 2
-    print("Sum of the first", n, "natural numbers is: ", sum )
+    sum = int(n * (n+1) / 2)
+    print("Sum of the first", n, "natural numbers is: ", sum)
 
 try:
     if type(n) == int:
